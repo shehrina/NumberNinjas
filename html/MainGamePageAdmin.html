@@ -1,0 +1,657 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.10.0" />
+<title>MainGamePageAdmin API documentation</title>
+<meta name="description" content="" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>MainGamePageAdmin</code></h1>
+</header>
+<section id="section-intro">
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">import pygame
+from MathQuestion import MathQuestion
+from Enemy import Enemy
+from Room import Room
+import random
+import sys
+
+
+def generate_questions(difficulty, num_questions):
+    &#34;&#34;&#34;
+    Parameters:
+        difficulty(int): The level of difficulty for the questions.
+        num_questions(int): The number of questions to generate.
+
+    Returns:
+        List[Enemy]: A list of enemies, each associated with a math question.
+    &#34;&#34;&#34;
+    questions = []
+    for i in range(num_questions):
+        operation = random.choice([&#39;+&#39;, &#39;-&#39;]) if difficulty &lt;= 5 else random.choice([&#39;*&#39;, &#39;/&#39;])
+        question = MathQuestion(difficulty)
+        if difficulty == 1:
+            question.generate_question(operation, 0, 10)
+        elif difficulty == 2:
+            question.generate_question(operation, 10, 30)
+        elif difficulty == 3:
+            question.generate_question(operation, 10, 50)
+        elif difficulty == 4:
+            question.generate_question(operation, 10, 80)
+        elif difficulty == 5:
+            question.generate_question(operation, 10, 100)
+        else:
+            question.generate_question(operation, 0, 10)
+        enemy = Enemy(question, False)
+        questions.append(enemy)
+    return questions
+
+def adminPage():
+    &#34;&#34;&#34;
+    Main function for running the NumberNinja game. Initializes the game, creates rooms with questions,
+    and manages the game loop including rendering the UI, handling user inputs, and navigating between game states.
+
+    The function sets up the Pygame window, loads assets, and then enters a game loop where it updates the game
+    state and renders the UI based on the current game state. It supports typing answers, navigating between questions
+    and levels, and provides feedback on user answers. The game progresses through different rooms, each with its own
+    set of math questions and associated enemies. It includes features for skipping levels and exiting the game.
+    &#34;&#34;&#34;
+    screen = pygame.display.set_mode((800, 600))
+    pygame.init()
+    screen_width, screen_height = 800, 600
+    window_surface = pygame.display.set_mode((screen_width, screen_height))
+    pygame.display.set_caption(&#39;Number Ninjas&#39;)
+    background_image = pygame.image.load(&#39;assets/gamebackground.png&#39;)
+    background_image = pygame.transform.scale(background_image, (screen_width, screen_height))
+
+    font = pygame.font.Font(None, 36)
+    WHITE = (255, 255, 255)
+    GREY = (200, 200, 200)
+    LIGHT_GRAY = (150, 150, 150)
+    BLACK = (0, 0, 0)
+    GREEN = (0, 255, 0)
+    RED = (255, 0, 0)
+    background_color = pygame.Color(&#39;#FFFFFF&#39;)
+
+    text_box_rect = pygame.Rect(350, 275, 100, 50)
+    submit_button_rect = pygame.Rect(350, 335, 100, 50)
+
+    # New text box and button for skipping levels
+    skip_level_text_box_rect = pygame.Rect(600, 500, 50, 30)
+    skip_button_rect = pygame.Rect(670, 500, 70, 30)
+
+    text = &#34;&#34;
+    skip_text = &#34;&#34;
+
+    is_typing = False
+    skip_typing = False
+
+    current_difficulty = 1
+    num_questions_per_room = 5
+    rooms = []
+
+    for i in range(10):
+        room_difficulty = current_difficulty + i
+        questions = generate_questions(room_difficulty, num_questions_per_room)
+        room = Room(room_difficulty)
+        room.questions = questions
+        rooms.append(room)
+
+    current_room_index = 0
+    current_room = rooms[current_room_index]
+
+    is_running = True
+    previous_room_index = current_room_index
+    feedback_text = None
+    invalid_room_text = None
+
+    while is_running:
+        window_surface.fill(background_color)
+        screen.blit(background_image, (0, 0))
+        ninja_image = pygame.image.load(&#39;assets/Ninja.png&#39;)
+        if current_room_index == 0:
+            enemy_image = pygame.image.load(&#39;assets/enemy1.png&#39;)
+        elif current_room_index == 1:
+            enemy_image = pygame.image.load(&#39;assets/enemy2.png&#39;)
+        elif current_room_index == 2:
+            enemy_image = pygame.image.load(&#39;assets/enemy3.png&#39;)
+        elif current_room_index == 3:
+            enemy_image = pygame.image.load(&#39;assets/enemy4.png&#39;)
+        elif current_room_index == 4:
+            enemy_image = pygame.image.load(&#39;assets/enemy5.png&#39;)
+        elif current_room_index == 5:
+            enemy_image = pygame.image.load(&#39;assets/enemy6.png&#39;)
+        elif current_room_index == 6:
+            enemy_image = pygame.image.load(&#39;assets/enemy7.png&#39;)
+        elif current_room_index == 7:
+            enemy_image = pygame.image.load(&#39;assets/enemy8.png&#39;)
+        elif current_room_index == 8:
+            enemy_image = pygame.image.load(&#39;assets/enemy9.png&#39;)
+        else:
+            enemy_image = pygame.image.load(&#39;assets/enemy10.png&#39;)
+        ninja_image = pygame.transform.scale(ninja_image, (300, 400))
+        enemy_image = pygame.transform.scale(enemy_image, (300, 300))
+        ninja_rect = ninja_image.get_rect(left=-40, bottom=screen_height - 50)
+        enemy_rect = enemy_image.get_rect(right=screen_width + 30, centery=screen_height // 2)
+        screen.blit(ninja_image, ninja_rect)
+        screen.blit(enemy_image, enemy_rect)
+
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                is_running = False
+            if event.type == pygame.MOUSEBUTTONDOWN:
+                if text_box_rect.collidepoint(event.pos):
+                    is_typing = True
+                else:
+                    is_typing = False
+                if skip_level_text_box_rect.collidepoint(event.pos):
+                    skip_typing = True
+                else:
+                    skip_typing = False
+                if event.type == pygame.MOUSEBUTTONDOWN:
+                    if text_box_rect.collidepoint(event.pos):
+                        is_typing = True
+                    else:
+                        is_typing = False
+                    if skip_level_text_box_rect.collidepoint(event.pos):
+                        skip_typing = True
+                    else:
+                        skip_typing = False
+                    if submit_button_rect.collidepoint(event.pos):
+                        current_question = current_room.questions[current_room.current_question_index].equation
+                        user_answer = int(text) if text.isdigit() else None
+                        if user_answer is not None:
+                            if user_answer == current_question.answer:
+                                feedback_text = font.render(current_question.check_answer(user_answer), True, GREEN)
+                                feedback_start_time = pygame.time.get_ticks()
+                                current_room.current_question_index += 1
+                                if current_room.current_question_index &gt;= len(current_room.questions):
+                                    current_room_index += 1
+                                    if current_room_index &lt; len(rooms):
+                                        current_room = rooms[current_room_index]
+                                    else:
+                                        is_running = False
+                            else:
+                                feedback_text = font.render(current_question.check_answer(user_answer), True, RED)
+                                feedback_start_time = pygame.time.get_ticks()
+                        text = &#34;&#34;
+                    elif event.type == pygame.MOUSEBUTTONDOWN:
+                        if back_button_rect.collidepoint(event.pos):
+                            return
+                    if skip_button_rect.collidepoint(event.pos):
+                        skip_level = int(skip_text) if skip_text.isdigit() else None
+                        if skip_level is not None and 1 &lt;= skip_level &lt;= 10:
+                            current_room_index = skip_level - 1
+                            current_room = rooms[current_room_index]
+                            skip_text = &#34;&#34;
+                        else:
+                            invalid_room_text = font.render(&#34;Invalid Room Number&#34;, True, RED)
+
+            if event.type == pygame.KEYDOWN and is_typing:
+                if event.key == pygame.K_BACKSPACE:
+                    text = text[:-1]
+                elif event.key == pygame.K_RETURN:
+                    print(text)
+                    text = &#34;&#34;
+                else:
+                    text += event.unicode
+
+            if event.type == pygame.KEYDOWN and skip_typing:
+                if event.key == pygame.K_BACKSPACE:
+                    skip_text = skip_text[:-1]
+                else:
+                    skip_text += event.unicode
+
+        if current_room_index &lt;= 9:
+            current_question = current_room.questions[current_room.current_question_index].equation
+        else:
+            window_surface.fill(background_color)
+            pygame.display.update()
+
+        if current_room_index == 10:
+            congratulations_text = font.render(&#34;Congratulations, you have cleared Number Ninjas!!!&#34;, True, BLACK)
+            congratulations_rect = congratulations_text.get_rect(center=(screen_width // 2, screen_height // 2))
+            window_surface.blit(congratulations_text, congratulations_rect)
+            pygame.display.update()
+            pygame.time.wait(5000)  # Display the message for 5 seconds
+            pygame.display.update()
+            is_running = False
+            break
+
+        question_text = font.render(current_question.get_question(), True, pygame.Color(&#39;#000000&#39;))
+        question_rect = question_text.get_rect(center=(400, 200))
+        question_box_rect = pygame.Rect(question_rect.left - 10, question_rect.top - 10, question_rect.width + 20,
+                                        question_rect.height + 20)
+        pygame.draw.rect(window_surface, WHITE, question_box_rect)  # Draw white box
+        window_surface.blit(question_text, question_rect)
+
+        pygame.draw.rect(window_surface, WHITE, text_box_rect)
+        if is_typing:
+            pygame.draw.rect(window_surface, BLACK, text_box_rect, 2)
+        else:
+            pygame.draw.rect(window_surface, GREY, text_box_rect, 2)
+        text_surface = font.render(text, True, BLACK)
+        text_rect = text_surface.get_rect(center=text_box_rect.center)
+        window_surface.blit(text_surface, text_rect)
+
+        pygame.draw.rect(window_surface, WHITE, submit_button_rect)
+        pygame.draw.rect(window_surface, BLACK, submit_button_rect, 2)
+        submit_text = font.render(&#34;Submit&#34;, True, BLACK)
+        submit_text_rect = submit_text.get_rect(center=submit_button_rect.center)
+        window_surface.blit(submit_text, submit_text_rect)
+
+        # Draw skip level text box and button
+        pygame.draw.rect(window_surface, WHITE, skip_level_text_box_rect)
+        pygame.draw.rect(window_surface, BLACK, skip_level_text_box_rect, 2)
+        skip_level_text = font.render(skip_text, True, BLACK)
+        skip_level_text_rect = skip_level_text.get_rect(center=skip_level_text_box_rect.center)
+        window_surface.blit(skip_level_text, skip_level_text_rect)
+
+        pygame.draw.rect(window_surface, WHITE, skip_button_rect)
+        pygame.draw.rect(window_surface, BLACK, skip_button_rect, 2)
+        skip_button_text = font.render(&#34;Skip&#34;, True, BLACK)
+        skip_button_text_rect = skip_button_text.get_rect(center=skip_button_rect.center)
+        window_surface.blit(skip_button_text, skip_button_text_rect)
+
+        # Add this section to create and render the back button
+        back_button_rect = pygame.Rect(10, 10, 100, 50)
+        pygame.draw.rect(window_surface, BLACK, back_button_rect, border_radius=10)
+        pygame.draw.rect(window_surface, LIGHT_GRAY, back_button_rect)
+        back_text = font.render(&#39;Back&#39;, True, BLACK)
+        back_text_rect = back_text.get_rect(center=back_button_rect.center)
+        window_surface.blit(back_text, back_text_rect)
+
+        level_text = font.render(f&#34;Level: {current_room_index + 1}&#34;, True, BLACK)
+        level_rect = level_text.get_rect(topright=(screen_width - 10, 10))
+        window_surface.blit(level_text, level_rect)
+
+        # Display &#34;Level completed&#34; message when the level changes
+        if current_room_index &gt; 0 and current_room_index != previous_room_index:
+            level_completed_text = font.render(&#34;Level Cleared!&#34;, True, GREEN)
+            level_completed_rect = level_completed_text.get_rect(center=(screen_width // 2, 100))
+            window_surface.blit(level_completed_text, level_completed_rect)
+            pygame.display.update()
+            pygame.time.wait(3000)  # Display the message for 3 seconds
+            previous_room_index = current_room_index
+
+        if feedback_text is not None:
+            if pygame.time.get_ticks() - feedback_start_time &lt; 1000:
+                feedback_rect = feedback_text.get_rect(center=(screen_width // 2, 50))
+                window_surface.blit(feedback_text, feedback_rect)
+            else:
+                feedback_text = None
+
+        if invalid_room_text is not None:
+            invalid_room_rect = invalid_room_text.get_rect(center=(screen_width // 2, 550))
+            window_surface.blit(invalid_room_text, invalid_room_rect)
+            pygame.display.update()
+            pygame.time.wait(2000)
+            invalid_room_text = None
+
+        pygame.display.update()
+
+    pygame.quit()
+    sys.exit()
+
+
+if __name__ == &#34;__main__&#34;:
+    adminPage()</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="MainGamePageAdmin.adminPage"><code class="name flex">
+<span>def <span class="ident">adminPage</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Main function for running the NumberNinja game. Initializes the game, creates rooms with questions,
+and manages the game loop including rendering the UI, handling user inputs, and navigating between game states.</p>
+<p>The function sets up the Pygame window, loads assets, and then enters a game loop where it updates the game
+state and renders the UI based on the current game state. It supports typing answers, navigating between questions
+and levels, and provides feedback on user answers. The game progresses through different rooms, each with its own
+set of math questions and associated enemies. It includes features for skipping levels and exiting the game.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def adminPage():
+    &#34;&#34;&#34;
+    Main function for running the NumberNinja game. Initializes the game, creates rooms with questions,
+    and manages the game loop including rendering the UI, handling user inputs, and navigating between game states.
+
+    The function sets up the Pygame window, loads assets, and then enters a game loop where it updates the game
+    state and renders the UI based on the current game state. It supports typing answers, navigating between questions
+    and levels, and provides feedback on user answers. The game progresses through different rooms, each with its own
+    set of math questions and associated enemies. It includes features for skipping levels and exiting the game.
+    &#34;&#34;&#34;
+    screen = pygame.display.set_mode((800, 600))
+    pygame.init()
+    screen_width, screen_height = 800, 600
+    window_surface = pygame.display.set_mode((screen_width, screen_height))
+    pygame.display.set_caption(&#39;Number Ninjas&#39;)
+    background_image = pygame.image.load(&#39;assets/gamebackground.png&#39;)
+    background_image = pygame.transform.scale(background_image, (screen_width, screen_height))
+
+    font = pygame.font.Font(None, 36)
+    WHITE = (255, 255, 255)
+    GREY = (200, 200, 200)
+    LIGHT_GRAY = (150, 150, 150)
+    BLACK = (0, 0, 0)
+    GREEN = (0, 255, 0)
+    RED = (255, 0, 0)
+    background_color = pygame.Color(&#39;#FFFFFF&#39;)
+
+    text_box_rect = pygame.Rect(350, 275, 100, 50)
+    submit_button_rect = pygame.Rect(350, 335, 100, 50)
+
+    # New text box and button for skipping levels
+    skip_level_text_box_rect = pygame.Rect(600, 500, 50, 30)
+    skip_button_rect = pygame.Rect(670, 500, 70, 30)
+
+    text = &#34;&#34;
+    skip_text = &#34;&#34;
+
+    is_typing = False
+    skip_typing = False
+
+    current_difficulty = 1
+    num_questions_per_room = 5
+    rooms = []
+
+    for i in range(10):
+        room_difficulty = current_difficulty + i
+        questions = generate_questions(room_difficulty, num_questions_per_room)
+        room = Room(room_difficulty)
+        room.questions = questions
+        rooms.append(room)
+
+    current_room_index = 0
+    current_room = rooms[current_room_index]
+
+    is_running = True
+    previous_room_index = current_room_index
+    feedback_text = None
+    invalid_room_text = None
+
+    while is_running:
+        window_surface.fill(background_color)
+        screen.blit(background_image, (0, 0))
+        ninja_image = pygame.image.load(&#39;assets/Ninja.png&#39;)
+        if current_room_index == 0:
+            enemy_image = pygame.image.load(&#39;assets/enemy1.png&#39;)
+        elif current_room_index == 1:
+            enemy_image = pygame.image.load(&#39;assets/enemy2.png&#39;)
+        elif current_room_index == 2:
+            enemy_image = pygame.image.load(&#39;assets/enemy3.png&#39;)
+        elif current_room_index == 3:
+            enemy_image = pygame.image.load(&#39;assets/enemy4.png&#39;)
+        elif current_room_index == 4:
+            enemy_image = pygame.image.load(&#39;assets/enemy5.png&#39;)
+        elif current_room_index == 5:
+            enemy_image = pygame.image.load(&#39;assets/enemy6.png&#39;)
+        elif current_room_index == 6:
+            enemy_image = pygame.image.load(&#39;assets/enemy7.png&#39;)
+        elif current_room_index == 7:
+            enemy_image = pygame.image.load(&#39;assets/enemy8.png&#39;)
+        elif current_room_index == 8:
+            enemy_image = pygame.image.load(&#39;assets/enemy9.png&#39;)
+        else:
+            enemy_image = pygame.image.load(&#39;assets/enemy10.png&#39;)
+        ninja_image = pygame.transform.scale(ninja_image, (300, 400))
+        enemy_image = pygame.transform.scale(enemy_image, (300, 300))
+        ninja_rect = ninja_image.get_rect(left=-40, bottom=screen_height - 50)
+        enemy_rect = enemy_image.get_rect(right=screen_width + 30, centery=screen_height // 2)
+        screen.blit(ninja_image, ninja_rect)
+        screen.blit(enemy_image, enemy_rect)
+
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                is_running = False
+            if event.type == pygame.MOUSEBUTTONDOWN:
+                if text_box_rect.collidepoint(event.pos):
+                    is_typing = True
+                else:
+                    is_typing = False
+                if skip_level_text_box_rect.collidepoint(event.pos):
+                    skip_typing = True
+                else:
+                    skip_typing = False
+                if event.type == pygame.MOUSEBUTTONDOWN:
+                    if text_box_rect.collidepoint(event.pos):
+                        is_typing = True
+                    else:
+                        is_typing = False
+                    if skip_level_text_box_rect.collidepoint(event.pos):
+                        skip_typing = True
+                    else:
+                        skip_typing = False
+                    if submit_button_rect.collidepoint(event.pos):
+                        current_question = current_room.questions[current_room.current_question_index].equation
+                        user_answer = int(text) if text.isdigit() else None
+                        if user_answer is not None:
+                            if user_answer == current_question.answer:
+                                feedback_text = font.render(current_question.check_answer(user_answer), True, GREEN)
+                                feedback_start_time = pygame.time.get_ticks()
+                                current_room.current_question_index += 1
+                                if current_room.current_question_index &gt;= len(current_room.questions):
+                                    current_room_index += 1
+                                    if current_room_index &lt; len(rooms):
+                                        current_room = rooms[current_room_index]
+                                    else:
+                                        is_running = False
+                            else:
+                                feedback_text = font.render(current_question.check_answer(user_answer), True, RED)
+                                feedback_start_time = pygame.time.get_ticks()
+                        text = &#34;&#34;
+                    elif event.type == pygame.MOUSEBUTTONDOWN:
+                        if back_button_rect.collidepoint(event.pos):
+                            return
+                    if skip_button_rect.collidepoint(event.pos):
+                        skip_level = int(skip_text) if skip_text.isdigit() else None
+                        if skip_level is not None and 1 &lt;= skip_level &lt;= 10:
+                            current_room_index = skip_level - 1
+                            current_room = rooms[current_room_index]
+                            skip_text = &#34;&#34;
+                        else:
+                            invalid_room_text = font.render(&#34;Invalid Room Number&#34;, True, RED)
+
+            if event.type == pygame.KEYDOWN and is_typing:
+                if event.key == pygame.K_BACKSPACE:
+                    text = text[:-1]
+                elif event.key == pygame.K_RETURN:
+                    print(text)
+                    text = &#34;&#34;
+                else:
+                    text += event.unicode
+
+            if event.type == pygame.KEYDOWN and skip_typing:
+                if event.key == pygame.K_BACKSPACE:
+                    skip_text = skip_text[:-1]
+                else:
+                    skip_text += event.unicode
+
+        if current_room_index &lt;= 9:
+            current_question = current_room.questions[current_room.current_question_index].equation
+        else:
+            window_surface.fill(background_color)
+            pygame.display.update()
+
+        if current_room_index == 10:
+            congratulations_text = font.render(&#34;Congratulations, you have cleared Number Ninjas!!!&#34;, True, BLACK)
+            congratulations_rect = congratulations_text.get_rect(center=(screen_width // 2, screen_height // 2))
+            window_surface.blit(congratulations_text, congratulations_rect)
+            pygame.display.update()
+            pygame.time.wait(5000)  # Display the message for 5 seconds
+            pygame.display.update()
+            is_running = False
+            break
+
+        question_text = font.render(current_question.get_question(), True, pygame.Color(&#39;#000000&#39;))
+        question_rect = question_text.get_rect(center=(400, 200))
+        question_box_rect = pygame.Rect(question_rect.left - 10, question_rect.top - 10, question_rect.width + 20,
+                                        question_rect.height + 20)
+        pygame.draw.rect(window_surface, WHITE, question_box_rect)  # Draw white box
+        window_surface.blit(question_text, question_rect)
+
+        pygame.draw.rect(window_surface, WHITE, text_box_rect)
+        if is_typing:
+            pygame.draw.rect(window_surface, BLACK, text_box_rect, 2)
+        else:
+            pygame.draw.rect(window_surface, GREY, text_box_rect, 2)
+        text_surface = font.render(text, True, BLACK)
+        text_rect = text_surface.get_rect(center=text_box_rect.center)
+        window_surface.blit(text_surface, text_rect)
+
+        pygame.draw.rect(window_surface, WHITE, submit_button_rect)
+        pygame.draw.rect(window_surface, BLACK, submit_button_rect, 2)
+        submit_text = font.render(&#34;Submit&#34;, True, BLACK)
+        submit_text_rect = submit_text.get_rect(center=submit_button_rect.center)
+        window_surface.blit(submit_text, submit_text_rect)
+
+        # Draw skip level text box and button
+        pygame.draw.rect(window_surface, WHITE, skip_level_text_box_rect)
+        pygame.draw.rect(window_surface, BLACK, skip_level_text_box_rect, 2)
+        skip_level_text = font.render(skip_text, True, BLACK)
+        skip_level_text_rect = skip_level_text.get_rect(center=skip_level_text_box_rect.center)
+        window_surface.blit(skip_level_text, skip_level_text_rect)
+
+        pygame.draw.rect(window_surface, WHITE, skip_button_rect)
+        pygame.draw.rect(window_surface, BLACK, skip_button_rect, 2)
+        skip_button_text = font.render(&#34;Skip&#34;, True, BLACK)
+        skip_button_text_rect = skip_button_text.get_rect(center=skip_button_rect.center)
+        window_surface.blit(skip_button_text, skip_button_text_rect)
+
+        # Add this section to create and render the back button
+        back_button_rect = pygame.Rect(10, 10, 100, 50)
+        pygame.draw.rect(window_surface, BLACK, back_button_rect, border_radius=10)
+        pygame.draw.rect(window_surface, LIGHT_GRAY, back_button_rect)
+        back_text = font.render(&#39;Back&#39;, True, BLACK)
+        back_text_rect = back_text.get_rect(center=back_button_rect.center)
+        window_surface.blit(back_text, back_text_rect)
+
+        level_text = font.render(f&#34;Level: {current_room_index + 1}&#34;, True, BLACK)
+        level_rect = level_text.get_rect(topright=(screen_width - 10, 10))
+        window_surface.blit(level_text, level_rect)
+
+        # Display &#34;Level completed&#34; message when the level changes
+        if current_room_index &gt; 0 and current_room_index != previous_room_index:
+            level_completed_text = font.render(&#34;Level Cleared!&#34;, True, GREEN)
+            level_completed_rect = level_completed_text.get_rect(center=(screen_width // 2, 100))
+            window_surface.blit(level_completed_text, level_completed_rect)
+            pygame.display.update()
+            pygame.time.wait(3000)  # Display the message for 3 seconds
+            previous_room_index = current_room_index
+
+        if feedback_text is not None:
+            if pygame.time.get_ticks() - feedback_start_time &lt; 1000:
+                feedback_rect = feedback_text.get_rect(center=(screen_width // 2, 50))
+                window_surface.blit(feedback_text, feedback_rect)
+            else:
+                feedback_text = None
+
+        if invalid_room_text is not None:
+            invalid_room_rect = invalid_room_text.get_rect(center=(screen_width // 2, 550))
+            window_surface.blit(invalid_room_text, invalid_room_rect)
+            pygame.display.update()
+            pygame.time.wait(2000)
+            invalid_room_text = None
+
+        pygame.display.update()
+
+    pygame.quit()
+    sys.exit()</code></pre>
+</details>
+</dd>
+<dt id="MainGamePageAdmin.generate_questions"><code class="name flex">
+<span>def <span class="ident">generate_questions</span></span>(<span>difficulty, num_questions)</span>
+</code></dt>
+<dd>
+<div class="desc"><h2 id="parameters">Parameters</h2>
+<p>difficulty(int): The level of difficulty for the questions.
+num_questions(int): The number of questions to generate.</p>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>List[Enemy]</code></dt>
+<dd>A list of enemies, each associated with a math question.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def generate_questions(difficulty, num_questions):
+    &#34;&#34;&#34;
+    Parameters:
+        difficulty(int): The level of difficulty for the questions.
+        num_questions(int): The number of questions to generate.
+
+    Returns:
+        List[Enemy]: A list of enemies, each associated with a math question.
+    &#34;&#34;&#34;
+    questions = []
+    for i in range(num_questions):
+        operation = random.choice([&#39;+&#39;, &#39;-&#39;]) if difficulty &lt;= 5 else random.choice([&#39;*&#39;, &#39;/&#39;])
+        question = MathQuestion(difficulty)
+        if difficulty == 1:
+            question.generate_question(operation, 0, 10)
+        elif difficulty == 2:
+            question.generate_question(operation, 10, 30)
+        elif difficulty == 3:
+            question.generate_question(operation, 10, 50)
+        elif difficulty == 4:
+            question.generate_question(operation, 10, 80)
+        elif difficulty == 5:
+            question.generate_question(operation, 10, 100)
+        else:
+            question.generate_question(operation, 0, 10)
+        enemy = Enemy(question, False)
+        questions.append(enemy)
+    return questions</code></pre>
+</details>
+</dd>
+</dl>
+</section>
+<section>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="">
+<li><code><a title="MainGamePageAdmin.adminPage" href="#MainGamePageAdmin.adminPage">adminPage</a></code></li>
+<li><code><a title="MainGamePageAdmin.generate_questions" href="#MainGamePageAdmin.generate_questions">generate_questions</a></code></li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.10.0</a>.</p>
+</footer>
+</body>
+</html>

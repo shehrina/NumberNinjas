@@ -1,0 +1,1120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.10.0" />
+<title>main API documentation</title>
+<meta name="description" content="" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>main</code></h1>
+</header>
+<section id="section-intro">
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">import pygame
+import sys
+from savedata import savedata
+from Student import Student
+from Teacher import Teacher
+from Admin import Admin
+
+# Initialize Pygame
+pygame.init()
+
+# Screen dimensions
+SCREEN_WIDTH = 800
+SCREEN_HEIGHT = 600
+
+# Colors    
+WHITE = (255, 255, 255)
+BLACK = (0, 0, 0)
+GRAY = (200, 200, 200)
+
+# Fonts
+FONT = pygame.font.Font(None, 32)
+
+# Create the screen
+screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+pygame.display.set_caption(&#34;Sign Up / Sign In&#34;)
+
+# Textbox class
+class TextBox:
+    &#34;&#34;&#34;
+    Represents a textbox for text input in Pygame.
+
+    Attributes:
+        rect (pygame.Rect): The rectangle defining the textbox position and size.
+        color (tuple): The color of the textbox (RGB).
+        text (str): The current text content of the textbox.
+        txt_surface (pygame.Surface): The surface to render text on.
+        active (bool): The state of the textbox, active or not.
+
+    Methods:
+        handle_event: Process events related to the textbox, such as typing or clicking.
+        draw: Render the textbox on the screen.
+        get_text: Return the current text content.
+    &#34;&#34;&#34;
+    def __init__(self, rect, text=&#39;&#39;):
+        self.rect = pygame.Rect(rect)
+        self.color = BLACK
+        self.text = text
+        self.txt_surface = FONT.render(text, True, self.color)
+        self.active = False
+
+    def handle_event(self, event):
+        if event.type == pygame.MOUSEBUTTONDOWN:
+            # If the user clicked on the textbox
+            if self.rect.collidepoint(event.pos):
+                self.active = not self.active
+            else:
+                self.active = False
+            # Change the color of the textbox
+            self.color = BLACK if self.active else GRAY
+        if event.type == pygame.KEYDOWN and self.active:
+            if event.key == pygame.K_RETURN:
+                self.active = False
+            elif event.key == pygame.K_BACKSPACE:
+                self.text = self.text[:-1]
+            else:
+                self.text += event.unicode
+            self.txt_surface = FONT.render(self.text, True, self.color)
+
+    def draw(self, surface):
+        pygame.draw.rect(surface, self.color, self.rect, 2)
+        surface.blit(self.txt_surface, (self.rect.x + 5, self.rect.y + 5))
+
+    def get_text(self):
+        return self.text
+# Function to draw text on the screen
+def draw_text(surface, text, color, rect, font):
+    &#34;&#34;&#34;
+    Draws text on the Pygame surface at the specified location.
+
+    Parameters:
+        surface (pygame.Surface): The Pygame surface to draw on.
+        text (str): The text to draw.
+        color (tuple): The color of the text (RGB).
+        rect (pygame.Rect): The rectangle defining the position to draw the text.
+        font (pygame.Font): The font to use for rendering the text.
+    &#34;&#34;&#34;
+    text_surface = font.render(text, True, color)
+    text_rect = text_surface.get_rect()
+    text_rect.center = rect.center
+    surface.blit(text_surface, text_rect)
+
+# Function to draw buttons
+def draw_button(surface, rect, color, text, font):
+    &#34;&#34;&#34;
+    Draws a button on the Pygame surface.
+    
+    Parameters:
+        surface (pygame.Surface): The surface to draw the button onto.
+        rect (pygame.Rect): The rectangle that defines the button&#39;s size and position.
+        color (tuple): The color of the button.
+        text (str): The label text of the button.
+        font (pygame.Font): The font used for the button&#39;s text.
+    &#34;&#34;&#34;
+    pygame.draw.rect(surface, color, rect)
+    draw_text(surface, text, BLACK, rect, font)
+
+# Function to handle input events
+def handle_input(events, text_boxes, buttons):
+    &#34;&#34;&#34;
+    Handles all input events for text boxes and button interactions.
+    
+    Parameters:
+        events (list): A list of events fetched from pygame.event.get().
+        text_boxes (list): A list of TextBox instances to be checked for events.
+        buttons (list): A list of dicts with button properties and actions to be checked for events.
+    &#34;&#34;&#34;
+    for box in text_boxes:
+        for event in events:
+            box.handle_event(event)
+
+    for button in buttons:
+        for event in events:
+            if event.type == pygame.MOUSEBUTTONDOWN:
+                if button[&#39;rect&#39;].collidepoint(event.pos):
+                    button[&#39;action&#39;]()
+
+    for event in events:
+        if event.type == pygame.QUIT:
+            pygame.quit()
+            sys.exit()
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_ESCAPE:
+                pygame.quit()
+                sys.exit()
+
+
+# Radio button class
+class RadioButton:
+    &#34;&#34;&#34;
+    A class representing a radio button for option selection.
+    
+    Attributes:
+        rect (pygame.Rect): Defines the position and dimensions of the radio button.
+        color (tuple): The color of the radio button.
+        text (str): The label text of the radio button.
+        font (pygame.Font): The font used for the radio button&#39;s text.
+        selected (bool): State of the radio button, True if it is selected.
+        
+    Methods:
+        handle_event: Responds to events, updating the selected state based on user interaction.
+        draw: Renders the radio button and its label onto the screen.
+        is_selected: Returns the selected state of the radio button.
+        getText: Returns the label text of the radio button.
+    &#34;&#34;&#34;
+    def __init__(self, rect, text=&#39;&#39;):
+        self.rect = pygame.Rect(rect)
+        self.color = BLACK
+        self.text = text
+        self.font = FONT
+        self.selected = False
+
+    def handle_event(self, event):
+        if event.type == pygame.MOUSEBUTTONDOWN:
+            if self.rect.collidepoint(event.pos):
+                self.selected = True
+            else:
+                self.selected = False
+
+    def draw(self, surface):
+        pygame.draw.rect(surface, self.color, self.rect, 2)
+        if self.selected:
+            pygame.draw.circle(surface, self.color, (self.rect.x + 10, self.rect.y + 10), 6)
+
+        # Calculate text position to center it within the button
+        text_surface = self.font.render(self.text, True, BLACK)
+        text_rect = text_surface.get_rect(center=self.rect.center)
+        surface.blit(text_surface, text_rect.topleft)
+
+    def is_selected(self):
+        return self.selected
+
+    def getText(self):
+        return self.text
+
+class MessageBox:
+    &#34;&#34;&#34;
+    A class representing a message box for displaying notifications and messages.
+    
+    Attributes:
+        rect (pygame.Rect): Defines the position and dimensions of the message box.
+        color (tuple): The background color of the message box.
+        text (str): The message text to be displayed in the message box.
+        
+    Methods:
+        draw: Renders the message box and its content onto the screen.
+    &#34;&#34;&#34;
+    def __init__(self, rect):
+        self.rect = pygame.Rect(rect)
+        self.color = WHITE
+        self.text = &#34;&#34;
+
+    def draw(self, surface):
+        pygame.draw.rect(surface, self.color, self.rect)
+        if self.text:
+            draw_text(surface, self.text,(255,0,0), self.rect, FONT)
+
+# Function to display sign up screen
+FONT_TITLE = pygame.font.Font(None, 48)
+def sign_up_screen(text_boxes, buttons, radio_buttons):
+    &#34;&#34;&#34;
+    Renders the sign-up screen interface.
+
+    Parameters:
+        text_boxes (list): A list of TextBox objects for user input.
+        buttons (list): A list of dictionaries, each describing a button with properties like rectangle, color, text, and action.
+        radio_buttons (list): A list of RadioButton objects for choosing user roles.
+        screen (pygame.Surface): The surface to draw the sign-up interface elements onto.
+
+    This function renders a title, multiple input fields for username, password, and email,
+    as well as options to choose a user role. It also displays buttons for submitting the sign-up form or navigating to the sign-in screen.
+    &#34;&#34;&#34;
+    screen.fill(WHITE)
+    # Draw the title &#34;Number Ninjas&#34;
+    draw_text(screen, &#34;Number Ninjas&#34;, BLACK, pygame.Rect(0, 0, SCREEN_WIDTH, 100), FONT_TITLE)
+    # Draw input fields for username, password, email
+    draw_text(screen, &#34;Sign Up&#34;, BLACK, pygame.Rect(0, 75, SCREEN_WIDTH, 50), FONT)
+    draw_text(screen, &#34;Username:&#34;, BLACK, pygame.Rect(50, 120, 200, 30), FONT)
+    text_boxes[0].draw(screen)
+    draw_text(screen, &#34;Password:&#34;, BLACK, pygame.Rect(50, 170, 200, 30), FONT)
+    text_boxes[1].draw(screen)
+    draw_text(screen, &#34;Email:&#34;, BLACK, pygame.Rect(50, 220, 200, 30), FONT)
+    text_boxes[2].draw(screen)
+    # Draw radio buttons for options
+    draw_text(screen, &#34;Choose Role:&#34;, BLACK, pygame.Rect(50, 270, 200, 30), FONT)
+    for button in radio_buttons:
+        button.draw(screen)
+    message_box.draw(screen)
+    for button in buttons:
+        draw_button(screen, button[&#39;rect&#39;], button[&#39;color&#39;], button[&#39;text&#39;], FONT)
+    pygame.display.flip()
+
+
+message_box = MessageBox((50, 330, 700, 50))
+# Function to display sign in screen
+def sign_in_screen(text_boxes, buttons):
+    &#34;&#34;&#34;
+    Renders the sign-in screen interface.
+
+    Parameters:
+        text_boxes (list): A list of TextBox objects for username and password input.
+        buttons (list): A list of dictionaries, each describing a button with properties like rectangle, color, text, and action.
+        screen (pygame.Surface): The surface to draw the sign-in interface elements onto.
+
+    This function renders a title and input fields for the username and password.
+    It also provides a sign-in button and a navigation option to go to the sign-up screen.
+    &#34;&#34;&#34;
+    screen.fill(WHITE)
+    # Draw the title &#34;Number Ninjas&#34;
+    draw_text(screen, &#34;Number Ninjas&#34;, BLACK, pygame.Rect(0, 0, SCREEN_WIDTH, 100), FONT_TITLE)
+    # Draw input fields for username, password
+    draw_text(screen, &#34;Sign In&#34;, BLACK, pygame.Rect(0, 75, SCREEN_WIDTH, 50), FONT)
+    draw_text(screen, &#34;Username:&#34;, BLACK, pygame.Rect(50, 120, 200, 30), FONT)
+    text_boxes[0].draw(screen)
+    draw_text(screen, &#34;Password:&#34;, BLACK, pygame.Rect(50, 170, 200, 30), FONT)
+    text_boxes[1].draw(screen)
+    message_box.draw(screen)
+    for button in buttons:
+        draw_button(screen, button[&#39;rect&#39;], button[&#39;color&#39;], button[&#39;text&#39;], FONT)
+    pygame.display.flip()
+
+# Main loop
+def main():
+    &#34;&#34;&#34;
+    The main function orchestrates the user authentication process for the Number Ninjas game.
+
+    It initializes and displays either the sign-up or sign-in screen, allowing new players to create an account or existing players to log in with their credentials. The function enters a loop that continuously listens for user input and renders the appropriate UI elements on the screen. The loop runs indefinitely, updating the display in response to the user&#39;s actions, until the user chooses to exit the game or switch between sign-in and sign-up screens.
+    
+    Attributes:
+        text_boxes (list): Collection of TextBox instances for entering user information.
+        buttons_sign_up (list): Collection of button dictionaries for the sign-up screen actions.
+        buttons_sign_in (list): Collection of button dictionaries for the sign-in screen actions.
+        current_screen (function): The function representing the current screen displayed to the user.
+    &#34;&#34;&#34;
+    username_box = TextBox((250, 120, 300, 30))
+    password_box = TextBox((250, 170, 300, 30))
+    email_box = TextBox((250, 220, 300, 30))
+    text_boxes = [username_box, password_box, email_box]
+
+    # Radio buttons initialization
+    student_button = RadioButton((250, 280, 150, 30), &#34;Student&#34;)
+    teacher_button = RadioButton((400, 280, 150, 30), &#34;Teacher&#34;)
+    moderator_button = RadioButton((550, 280, 150, 30), &#34;Moderator&#34;)
+    radio_buttons = [student_button, teacher_button, moderator_button]
+
+    def go_to_sign_in():
+        nonlocal current_screen
+        current_screen = sign_in_screen
+
+    def go_to_sign_up():
+        nonlocal current_screen
+        current_screen = sign_up_screen
+
+    def sign_up():
+        # Add functionality for sign-up button
+        username = username_box.get_text()
+        password = password_box.get_text()
+        email = email_box.get_text()
+
+        usertype = &#34;&#34;
+        for button in radio_buttons:
+            if button.is_selected():
+                usertype = button.getText()
+
+        if usertype == &#34;&#34; or username == &#34;&#34; or password == &#34;&#34; or email == &#34;&#34;:
+            message_box.text=&#34;Missing fields required.&#34;
+        else:
+            saves = savedata()
+            if usertype == &#39;Student&#39;:
+                user = Student()
+            elif usertype == &#39;Teacher&#39;:
+                user = Teacher()
+            else:
+                user = Admin()
+
+            if user.signup(username, password, email, saves) == False:
+                message_box.text = &#34;Username is taken.&#34;
+
+    def sign_in():
+        username = username_box.get_text()
+        password = password_box.get_text()
+        saves = savedata()
+        userData = saves.getUserData(username, password)
+        if userData == None:
+            message_box.text = &#34;Invalid username or password.&#34;
+        else:
+            usertype = userData[&#39;User_Type&#39;]
+            if usertype == &#39;Student&#39;:
+                user = Student()
+            elif usertype == &#39;Teacher&#39;:
+                user = Teacher()
+            else:
+                user = Admin()
+
+            user.signin(userData[&#39;Username&#39;], userData[&#39;Password&#39;], saves)
+            print(user.email)
+
+    buttons_sign_up = [
+        {&#39;rect&#39;: pygame.Rect(200, 380, 200, 50), &#39;color&#39;: GRAY, &#39;text&#39;: &#34;Sign Up&#34;, &#39;action&#39;: sign_up},
+        {&#39;rect&#39;: pygame.Rect(200, 440, 200, 50), &#39;color&#39;: GRAY, &#39;text&#39;: &#34;Go to Sign In&#34;, &#39;action&#39;: go_to_sign_in}
+    ]
+
+    buttons_sign_in = [
+        {&#39;rect&#39;: pygame.Rect(200, 380, 200, 50), &#39;color&#39;: GRAY, &#39;text&#39;: &#34;Sign In&#34;, &#39;action&#39;: sign_in},
+        {&#39;rect&#39;: pygame.Rect(200, 440, 200, 50), &#39;color&#39;: GRAY, &#39;text&#39;: &#34;Go to Sign Up&#34;, &#39;action&#39;: go_to_sign_up}
+    ]
+    current_screen = sign_up_screen  # Start with sign up screen
+    while True:
+        events = pygame.event.get()
+        handle_input(events, text_boxes, buttons_sign_up if current_screen == sign_up_screen else buttons_sign_in)
+        if current_screen == sign_up_screen:
+            current_screen(text_boxes, buttons_sign_up, radio_buttons)
+            if events:  # Check if events list is not empty
+                for button in radio_buttons:
+                    button.handle_event(events[0])  # Assuming only one event is handled at a time
+        else:
+            current_screen(text_boxes, buttons_sign_in)  # Pass only necessary arguments
+        pygame.display.update()
+
+
+if __name__ == &#34;__main__&#34;:
+    main()</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="main.draw_button"><code class="name flex">
+<span>def <span class="ident">draw_button</span></span>(<span>surface, rect, color, text, font)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Draws a button on the Pygame surface.</p>
+<h2 id="parameters">Parameters</h2>
+<p>surface (pygame.Surface): The surface to draw the button onto.
+rect (pygame.Rect): The rectangle that defines the button's size and position.
+color (tuple): The color of the button.
+text (str): The label text of the button.
+font (pygame.Font): The font used for the button's text.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def draw_button(surface, rect, color, text, font):
+    &#34;&#34;&#34;
+    Draws a button on the Pygame surface.
+    
+    Parameters:
+        surface (pygame.Surface): The surface to draw the button onto.
+        rect (pygame.Rect): The rectangle that defines the button&#39;s size and position.
+        color (tuple): The color of the button.
+        text (str): The label text of the button.
+        font (pygame.Font): The font used for the button&#39;s text.
+    &#34;&#34;&#34;
+    pygame.draw.rect(surface, color, rect)
+    draw_text(surface, text, BLACK, rect, font)</code></pre>
+</details>
+</dd>
+<dt id="main.draw_text"><code class="name flex">
+<span>def <span class="ident">draw_text</span></span>(<span>surface, text, color, rect, font)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Draws text on the Pygame surface at the specified location.</p>
+<h2 id="parameters">Parameters</h2>
+<p>surface (pygame.Surface): The Pygame surface to draw on.
+text (str): The text to draw.
+color (tuple): The color of the text (RGB).
+rect (pygame.Rect): The rectangle defining the position to draw the text.
+font (pygame.Font): The font to use for rendering the text.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def draw_text(surface, text, color, rect, font):
+    &#34;&#34;&#34;
+    Draws text on the Pygame surface at the specified location.
+
+    Parameters:
+        surface (pygame.Surface): The Pygame surface to draw on.
+        text (str): The text to draw.
+        color (tuple): The color of the text (RGB).
+        rect (pygame.Rect): The rectangle defining the position to draw the text.
+        font (pygame.Font): The font to use for rendering the text.
+    &#34;&#34;&#34;
+    text_surface = font.render(text, True, color)
+    text_rect = text_surface.get_rect()
+    text_rect.center = rect.center
+    surface.blit(text_surface, text_rect)</code></pre>
+</details>
+</dd>
+<dt id="main.handle_input"><code class="name flex">
+<span>def <span class="ident">handle_input</span></span>(<span>events, text_boxes, buttons)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Handles all input events for text boxes and button interactions.</p>
+<h2 id="parameters">Parameters</h2>
+<p>events (list): A list of events fetched from pygame.event.get().
+text_boxes (list): A list of TextBox instances to be checked for events.
+buttons (list): A list of dicts with button properties and actions to be checked for events.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def handle_input(events, text_boxes, buttons):
+    &#34;&#34;&#34;
+    Handles all input events for text boxes and button interactions.
+    
+    Parameters:
+        events (list): A list of events fetched from pygame.event.get().
+        text_boxes (list): A list of TextBox instances to be checked for events.
+        buttons (list): A list of dicts with button properties and actions to be checked for events.
+    &#34;&#34;&#34;
+    for box in text_boxes:
+        for event in events:
+            box.handle_event(event)
+
+    for button in buttons:
+        for event in events:
+            if event.type == pygame.MOUSEBUTTONDOWN:
+                if button[&#39;rect&#39;].collidepoint(event.pos):
+                    button[&#39;action&#39;]()
+
+    for event in events:
+        if event.type == pygame.QUIT:
+            pygame.quit()
+            sys.exit()
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_ESCAPE:
+                pygame.quit()
+                sys.exit()</code></pre>
+</details>
+</dd>
+<dt id="main.main"><code class="name flex">
+<span>def <span class="ident">main</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>The main function orchestrates the user authentication process for the Number Ninjas game.</p>
+<p>It initializes and displays either the sign-up or sign-in screen, allowing new players to create an account or existing players to log in with their credentials. The function enters a loop that continuously listens for user input and renders the appropriate UI elements on the screen. The loop runs indefinitely, updating the display in response to the user's actions, until the user chooses to exit the game or switch between sign-in and sign-up screens.</p>
+<h2 id="attributes">Attributes</h2>
+<dl>
+<dt><strong><code>text_boxes</code></strong> :&ensp;<code>list</code></dt>
+<dd>Collection of TextBox instances for entering user information.</dd>
+<dt><strong><code>buttons_sign_up</code></strong> :&ensp;<code>list</code></dt>
+<dd>Collection of button dictionaries for the sign-up screen actions.</dd>
+<dt><strong><code>buttons_sign_in</code></strong> :&ensp;<code>list</code></dt>
+<dd>Collection of button dictionaries for the sign-in screen actions.</dd>
+<dt><strong><code>current_screen</code></strong> :&ensp;<code>function</code></dt>
+<dd>The function representing the current screen displayed to the user.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def main():
+    &#34;&#34;&#34;
+    The main function orchestrates the user authentication process for the Number Ninjas game.
+
+    It initializes and displays either the sign-up or sign-in screen, allowing new players to create an account or existing players to log in with their credentials. The function enters a loop that continuously listens for user input and renders the appropriate UI elements on the screen. The loop runs indefinitely, updating the display in response to the user&#39;s actions, until the user chooses to exit the game or switch between sign-in and sign-up screens.
+    
+    Attributes:
+        text_boxes (list): Collection of TextBox instances for entering user information.
+        buttons_sign_up (list): Collection of button dictionaries for the sign-up screen actions.
+        buttons_sign_in (list): Collection of button dictionaries for the sign-in screen actions.
+        current_screen (function): The function representing the current screen displayed to the user.
+    &#34;&#34;&#34;
+    username_box = TextBox((250, 120, 300, 30))
+    password_box = TextBox((250, 170, 300, 30))
+    email_box = TextBox((250, 220, 300, 30))
+    text_boxes = [username_box, password_box, email_box]
+
+    # Radio buttons initialization
+    student_button = RadioButton((250, 280, 150, 30), &#34;Student&#34;)
+    teacher_button = RadioButton((400, 280, 150, 30), &#34;Teacher&#34;)
+    moderator_button = RadioButton((550, 280, 150, 30), &#34;Moderator&#34;)
+    radio_buttons = [student_button, teacher_button, moderator_button]
+
+    def go_to_sign_in():
+        nonlocal current_screen
+        current_screen = sign_in_screen
+
+    def go_to_sign_up():
+        nonlocal current_screen
+        current_screen = sign_up_screen
+
+    def sign_up():
+        # Add functionality for sign-up button
+        username = username_box.get_text()
+        password = password_box.get_text()
+        email = email_box.get_text()
+
+        usertype = &#34;&#34;
+        for button in radio_buttons:
+            if button.is_selected():
+                usertype = button.getText()
+
+        if usertype == &#34;&#34; or username == &#34;&#34; or password == &#34;&#34; or email == &#34;&#34;:
+            message_box.text=&#34;Missing fields required.&#34;
+        else:
+            saves = savedata()
+            if usertype == &#39;Student&#39;:
+                user = Student()
+            elif usertype == &#39;Teacher&#39;:
+                user = Teacher()
+            else:
+                user = Admin()
+
+            if user.signup(username, password, email, saves) == False:
+                message_box.text = &#34;Username is taken.&#34;
+
+    def sign_in():
+        username = username_box.get_text()
+        password = password_box.get_text()
+        saves = savedata()
+        userData = saves.getUserData(username, password)
+        if userData == None:
+            message_box.text = &#34;Invalid username or password.&#34;
+        else:
+            usertype = userData[&#39;User_Type&#39;]
+            if usertype == &#39;Student&#39;:
+                user = Student()
+            elif usertype == &#39;Teacher&#39;:
+                user = Teacher()
+            else:
+                user = Admin()
+
+            user.signin(userData[&#39;Username&#39;], userData[&#39;Password&#39;], saves)
+            print(user.email)
+
+    buttons_sign_up = [
+        {&#39;rect&#39;: pygame.Rect(200, 380, 200, 50), &#39;color&#39;: GRAY, &#39;text&#39;: &#34;Sign Up&#34;, &#39;action&#39;: sign_up},
+        {&#39;rect&#39;: pygame.Rect(200, 440, 200, 50), &#39;color&#39;: GRAY, &#39;text&#39;: &#34;Go to Sign In&#34;, &#39;action&#39;: go_to_sign_in}
+    ]
+
+    buttons_sign_in = [
+        {&#39;rect&#39;: pygame.Rect(200, 380, 200, 50), &#39;color&#39;: GRAY, &#39;text&#39;: &#34;Sign In&#34;, &#39;action&#39;: sign_in},
+        {&#39;rect&#39;: pygame.Rect(200, 440, 200, 50), &#39;color&#39;: GRAY, &#39;text&#39;: &#34;Go to Sign Up&#34;, &#39;action&#39;: go_to_sign_up}
+    ]
+    current_screen = sign_up_screen  # Start with sign up screen
+    while True:
+        events = pygame.event.get()
+        handle_input(events, text_boxes, buttons_sign_up if current_screen == sign_up_screen else buttons_sign_in)
+        if current_screen == sign_up_screen:
+            current_screen(text_boxes, buttons_sign_up, radio_buttons)
+            if events:  # Check if events list is not empty
+                for button in radio_buttons:
+                    button.handle_event(events[0])  # Assuming only one event is handled at a time
+        else:
+            current_screen(text_boxes, buttons_sign_in)  # Pass only necessary arguments
+        pygame.display.update()</code></pre>
+</details>
+</dd>
+<dt id="main.sign_in_screen"><code class="name flex">
+<span>def <span class="ident">sign_in_screen</span></span>(<span>text_boxes, buttons)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Renders the sign-in screen interface.</p>
+<h2 id="parameters">Parameters</h2>
+<p>text_boxes (list): A list of TextBox objects for username and password input.
+buttons (list): A list of dictionaries, each describing a button with properties like rectangle, color, text, and action.
+screen (pygame.Surface): The surface to draw the sign-in interface elements onto.</p>
+<p>This function renders a title and input fields for the username and password.
+It also provides a sign-in button and a navigation option to go to the sign-up screen.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def sign_in_screen(text_boxes, buttons):
+    &#34;&#34;&#34;
+    Renders the sign-in screen interface.
+
+    Parameters:
+        text_boxes (list): A list of TextBox objects for username and password input.
+        buttons (list): A list of dictionaries, each describing a button with properties like rectangle, color, text, and action.
+        screen (pygame.Surface): The surface to draw the sign-in interface elements onto.
+
+    This function renders a title and input fields for the username and password.
+    It also provides a sign-in button and a navigation option to go to the sign-up screen.
+    &#34;&#34;&#34;
+    screen.fill(WHITE)
+    # Draw the title &#34;Number Ninjas&#34;
+    draw_text(screen, &#34;Number Ninjas&#34;, BLACK, pygame.Rect(0, 0, SCREEN_WIDTH, 100), FONT_TITLE)
+    # Draw input fields for username, password
+    draw_text(screen, &#34;Sign In&#34;, BLACK, pygame.Rect(0, 75, SCREEN_WIDTH, 50), FONT)
+    draw_text(screen, &#34;Username:&#34;, BLACK, pygame.Rect(50, 120, 200, 30), FONT)
+    text_boxes[0].draw(screen)
+    draw_text(screen, &#34;Password:&#34;, BLACK, pygame.Rect(50, 170, 200, 30), FONT)
+    text_boxes[1].draw(screen)
+    message_box.draw(screen)
+    for button in buttons:
+        draw_button(screen, button[&#39;rect&#39;], button[&#39;color&#39;], button[&#39;text&#39;], FONT)
+    pygame.display.flip()</code></pre>
+</details>
+</dd>
+<dt id="main.sign_up_screen"><code class="name flex">
+<span>def <span class="ident">sign_up_screen</span></span>(<span>text_boxes, buttons, radio_buttons)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Renders the sign-up screen interface.</p>
+<h2 id="parameters">Parameters</h2>
+<p>text_boxes (list): A list of TextBox objects for user input.
+buttons (list): A list of dictionaries, each describing a button with properties like rectangle, color, text, and action.
+radio_buttons (list): A list of RadioButton objects for choosing user roles.
+screen (pygame.Surface): The surface to draw the sign-up interface elements onto.</p>
+<p>This function renders a title, multiple input fields for username, password, and email,
+as well as options to choose a user role. It also displays buttons for submitting the sign-up form or navigating to the sign-in screen.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def sign_up_screen(text_boxes, buttons, radio_buttons):
+    &#34;&#34;&#34;
+    Renders the sign-up screen interface.
+
+    Parameters:
+        text_boxes (list): A list of TextBox objects for user input.
+        buttons (list): A list of dictionaries, each describing a button with properties like rectangle, color, text, and action.
+        radio_buttons (list): A list of RadioButton objects for choosing user roles.
+        screen (pygame.Surface): The surface to draw the sign-up interface elements onto.
+
+    This function renders a title, multiple input fields for username, password, and email,
+    as well as options to choose a user role. It also displays buttons for submitting the sign-up form or navigating to the sign-in screen.
+    &#34;&#34;&#34;
+    screen.fill(WHITE)
+    # Draw the title &#34;Number Ninjas&#34;
+    draw_text(screen, &#34;Number Ninjas&#34;, BLACK, pygame.Rect(0, 0, SCREEN_WIDTH, 100), FONT_TITLE)
+    # Draw input fields for username, password, email
+    draw_text(screen, &#34;Sign Up&#34;, BLACK, pygame.Rect(0, 75, SCREEN_WIDTH, 50), FONT)
+    draw_text(screen, &#34;Username:&#34;, BLACK, pygame.Rect(50, 120, 200, 30), FONT)
+    text_boxes[0].draw(screen)
+    draw_text(screen, &#34;Password:&#34;, BLACK, pygame.Rect(50, 170, 200, 30), FONT)
+    text_boxes[1].draw(screen)
+    draw_text(screen, &#34;Email:&#34;, BLACK, pygame.Rect(50, 220, 200, 30), FONT)
+    text_boxes[2].draw(screen)
+    # Draw radio buttons for options
+    draw_text(screen, &#34;Choose Role:&#34;, BLACK, pygame.Rect(50, 270, 200, 30), FONT)
+    for button in radio_buttons:
+        button.draw(screen)
+    message_box.draw(screen)
+    for button in buttons:
+        draw_button(screen, button[&#39;rect&#39;], button[&#39;color&#39;], button[&#39;text&#39;], FONT)
+    pygame.display.flip()</code></pre>
+</details>
+</dd>
+</dl>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="main.MessageBox"><code class="flex name class">
+<span>class <span class="ident">MessageBox</span></span>
+<span>(</span><span>rect)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>A class representing a message box for displaying notifications and messages.</p>
+<h2 id="attributes">Attributes</h2>
+<dl>
+<dt><strong><code>rect</code></strong> :&ensp;<code>pygame.Rect</code></dt>
+<dd>Defines the position and dimensions of the message box.</dd>
+<dt><strong><code>color</code></strong> :&ensp;<code>tuple</code></dt>
+<dd>The background color of the message box.</dd>
+<dt><strong><code>text</code></strong> :&ensp;<code>str</code></dt>
+<dd>The message text to be displayed in the message box.</dd>
+</dl>
+<h2 id="methods">Methods</h2>
+<p>draw: Renders the message box and its content onto the screen.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class MessageBox:
+    &#34;&#34;&#34;
+    A class representing a message box for displaying notifications and messages.
+    
+    Attributes:
+        rect (pygame.Rect): Defines the position and dimensions of the message box.
+        color (tuple): The background color of the message box.
+        text (str): The message text to be displayed in the message box.
+        
+    Methods:
+        draw: Renders the message box and its content onto the screen.
+    &#34;&#34;&#34;
+    def __init__(self, rect):
+        self.rect = pygame.Rect(rect)
+        self.color = WHITE
+        self.text = &#34;&#34;
+
+    def draw(self, surface):
+        pygame.draw.rect(surface, self.color, self.rect)
+        if self.text:
+            draw_text(surface, self.text,(255,0,0), self.rect, FONT)</code></pre>
+</details>
+<h3>Methods</h3>
+<dl>
+<dt id="main.MessageBox.draw"><code class="name flex">
+<span>def <span class="ident">draw</span></span>(<span>self, surface)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def draw(self, surface):
+    pygame.draw.rect(surface, self.color, self.rect)
+    if self.text:
+        draw_text(surface, self.text,(255,0,0), self.rect, FONT)</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="main.RadioButton"><code class="flex name class">
+<span>class <span class="ident">RadioButton</span></span>
+<span>(</span><span>rect, text='')</span>
+</code></dt>
+<dd>
+<div class="desc"><p>A class representing a radio button for option selection.</p>
+<h2 id="attributes">Attributes</h2>
+<dl>
+<dt><strong><code>rect</code></strong> :&ensp;<code>pygame.Rect</code></dt>
+<dd>Defines the position and dimensions of the radio button.</dd>
+<dt><strong><code>color</code></strong> :&ensp;<code>tuple</code></dt>
+<dd>The color of the radio button.</dd>
+<dt><strong><code>text</code></strong> :&ensp;<code>str</code></dt>
+<dd>The label text of the radio button.</dd>
+<dt><strong><code>font</code></strong> :&ensp;<code>pygame.Font</code></dt>
+<dd>The font used for the radio button's text.</dd>
+<dt><strong><code>selected</code></strong> :&ensp;<code>bool</code></dt>
+<dd>State of the radio button, True if it is selected.</dd>
+</dl>
+<h2 id="methods">Methods</h2>
+<p>handle_event: Responds to events, updating the selected state based on user interaction.
+draw: Renders the radio button and its label onto the screen.
+is_selected: Returns the selected state of the radio button.
+getText: Returns the label text of the radio button.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class RadioButton:
+    &#34;&#34;&#34;
+    A class representing a radio button for option selection.
+    
+    Attributes:
+        rect (pygame.Rect): Defines the position and dimensions of the radio button.
+        color (tuple): The color of the radio button.
+        text (str): The label text of the radio button.
+        font (pygame.Font): The font used for the radio button&#39;s text.
+        selected (bool): State of the radio button, True if it is selected.
+        
+    Methods:
+        handle_event: Responds to events, updating the selected state based on user interaction.
+        draw: Renders the radio button and its label onto the screen.
+        is_selected: Returns the selected state of the radio button.
+        getText: Returns the label text of the radio button.
+    &#34;&#34;&#34;
+    def __init__(self, rect, text=&#39;&#39;):
+        self.rect = pygame.Rect(rect)
+        self.color = BLACK
+        self.text = text
+        self.font = FONT
+        self.selected = False
+
+    def handle_event(self, event):
+        if event.type == pygame.MOUSEBUTTONDOWN:
+            if self.rect.collidepoint(event.pos):
+                self.selected = True
+            else:
+                self.selected = False
+
+    def draw(self, surface):
+        pygame.draw.rect(surface, self.color, self.rect, 2)
+        if self.selected:
+            pygame.draw.circle(surface, self.color, (self.rect.x + 10, self.rect.y + 10), 6)
+
+        # Calculate text position to center it within the button
+        text_surface = self.font.render(self.text, True, BLACK)
+        text_rect = text_surface.get_rect(center=self.rect.center)
+        surface.blit(text_surface, text_rect.topleft)
+
+    def is_selected(self):
+        return self.selected
+
+    def getText(self):
+        return self.text</code></pre>
+</details>
+<h3>Methods</h3>
+<dl>
+<dt id="main.RadioButton.draw"><code class="name flex">
+<span>def <span class="ident">draw</span></span>(<span>self, surface)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def draw(self, surface):
+    pygame.draw.rect(surface, self.color, self.rect, 2)
+    if self.selected:
+        pygame.draw.circle(surface, self.color, (self.rect.x + 10, self.rect.y + 10), 6)
+
+    # Calculate text position to center it within the button
+    text_surface = self.font.render(self.text, True, BLACK)
+    text_rect = text_surface.get_rect(center=self.rect.center)
+    surface.blit(text_surface, text_rect.topleft)</code></pre>
+</details>
+</dd>
+<dt id="main.RadioButton.getText"><code class="name flex">
+<span>def <span class="ident">getText</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def getText(self):
+    return self.text</code></pre>
+</details>
+</dd>
+<dt id="main.RadioButton.handle_event"><code class="name flex">
+<span>def <span class="ident">handle_event</span></span>(<span>self, event)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def handle_event(self, event):
+    if event.type == pygame.MOUSEBUTTONDOWN:
+        if self.rect.collidepoint(event.pos):
+            self.selected = True
+        else:
+            self.selected = False</code></pre>
+</details>
+</dd>
+<dt id="main.RadioButton.is_selected"><code class="name flex">
+<span>def <span class="ident">is_selected</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def is_selected(self):
+    return self.selected</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="main.TextBox"><code class="flex name class">
+<span>class <span class="ident">TextBox</span></span>
+<span>(</span><span>rect, text='')</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Represents a textbox for text input in Pygame.</p>
+<h2 id="attributes">Attributes</h2>
+<dl>
+<dt><strong><code>rect</code></strong> :&ensp;<code>pygame.Rect</code></dt>
+<dd>The rectangle defining the textbox position and size.</dd>
+<dt><strong><code>color</code></strong> :&ensp;<code>tuple</code></dt>
+<dd>The color of the textbox (RGB).</dd>
+<dt><strong><code>text</code></strong> :&ensp;<code>str</code></dt>
+<dd>The current text content of the textbox.</dd>
+<dt><strong><code>txt_surface</code></strong> :&ensp;<code>pygame.Surface</code></dt>
+<dd>The surface to render text on.</dd>
+<dt><strong><code>active</code></strong> :&ensp;<code>bool</code></dt>
+<dd>The state of the textbox, active or not.</dd>
+</dl>
+<h2 id="methods">Methods</h2>
+<p>handle_event: Process events related to the textbox, such as typing or clicking.
+draw: Render the textbox on the screen.
+get_text: Return the current text content.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class TextBox:
+    &#34;&#34;&#34;
+    Represents a textbox for text input in Pygame.
+
+    Attributes:
+        rect (pygame.Rect): The rectangle defining the textbox position and size.
+        color (tuple): The color of the textbox (RGB).
+        text (str): The current text content of the textbox.
+        txt_surface (pygame.Surface): The surface to render text on.
+        active (bool): The state of the textbox, active or not.
+
+    Methods:
+        handle_event: Process events related to the textbox, such as typing or clicking.
+        draw: Render the textbox on the screen.
+        get_text: Return the current text content.
+    &#34;&#34;&#34;
+    def __init__(self, rect, text=&#39;&#39;):
+        self.rect = pygame.Rect(rect)
+        self.color = BLACK
+        self.text = text
+        self.txt_surface = FONT.render(text, True, self.color)
+        self.active = False
+
+    def handle_event(self, event):
+        if event.type == pygame.MOUSEBUTTONDOWN:
+            # If the user clicked on the textbox
+            if self.rect.collidepoint(event.pos):
+                self.active = not self.active
+            else:
+                self.active = False
+            # Change the color of the textbox
+            self.color = BLACK if self.active else GRAY
+        if event.type == pygame.KEYDOWN and self.active:
+            if event.key == pygame.K_RETURN:
+                self.active = False
+            elif event.key == pygame.K_BACKSPACE:
+                self.text = self.text[:-1]
+            else:
+                self.text += event.unicode
+            self.txt_surface = FONT.render(self.text, True, self.color)
+
+    def draw(self, surface):
+        pygame.draw.rect(surface, self.color, self.rect, 2)
+        surface.blit(self.txt_surface, (self.rect.x + 5, self.rect.y + 5))
+
+    def get_text(self):
+        return self.text</code></pre>
+</details>
+<h3>Methods</h3>
+<dl>
+<dt id="main.TextBox.draw"><code class="name flex">
+<span>def <span class="ident">draw</span></span>(<span>self, surface)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def draw(self, surface):
+    pygame.draw.rect(surface, self.color, self.rect, 2)
+    surface.blit(self.txt_surface, (self.rect.x + 5, self.rect.y + 5))</code></pre>
+</details>
+</dd>
+<dt id="main.TextBox.get_text"><code class="name flex">
+<span>def <span class="ident">get_text</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_text(self):
+    return self.text</code></pre>
+</details>
+</dd>
+<dt id="main.TextBox.handle_event"><code class="name flex">
+<span>def <span class="ident">handle_event</span></span>(<span>self, event)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def handle_event(self, event):
+    if event.type == pygame.MOUSEBUTTONDOWN:
+        # If the user clicked on the textbox
+        if self.rect.collidepoint(event.pos):
+            self.active = not self.active
+        else:
+            self.active = False
+        # Change the color of the textbox
+        self.color = BLACK if self.active else GRAY
+    if event.type == pygame.KEYDOWN and self.active:
+        if event.key == pygame.K_RETURN:
+            self.active = False
+        elif event.key == pygame.K_BACKSPACE:
+            self.text = self.text[:-1]
+        else:
+            self.text += event.unicode
+        self.txt_surface = FONT.render(self.text, True, self.color)</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="two-column">
+<li><code><a title="main.draw_button" href="#main.draw_button">draw_button</a></code></li>
+<li><code><a title="main.draw_text" href="#main.draw_text">draw_text</a></code></li>
+<li><code><a title="main.handle_input" href="#main.handle_input">handle_input</a></code></li>
+<li><code><a title="main.main" href="#main.main">main</a></code></li>
+<li><code><a title="main.sign_in_screen" href="#main.sign_in_screen">sign_in_screen</a></code></li>
+<li><code><a title="main.sign_up_screen" href="#main.sign_up_screen">sign_up_screen</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="main.MessageBox" href="#main.MessageBox">MessageBox</a></code></h4>
+<ul class="">
+<li><code><a title="main.MessageBox.draw" href="#main.MessageBox.draw">draw</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="main.RadioButton" href="#main.RadioButton">RadioButton</a></code></h4>
+<ul class="">
+<li><code><a title="main.RadioButton.draw" href="#main.RadioButton.draw">draw</a></code></li>
+<li><code><a title="main.RadioButton.getText" href="#main.RadioButton.getText">getText</a></code></li>
+<li><code><a title="main.RadioButton.handle_event" href="#main.RadioButton.handle_event">handle_event</a></code></li>
+<li><code><a title="main.RadioButton.is_selected" href="#main.RadioButton.is_selected">is_selected</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="main.TextBox" href="#main.TextBox">TextBox</a></code></h4>
+<ul class="">
+<li><code><a title="main.TextBox.draw" href="#main.TextBox.draw">draw</a></code></li>
+<li><code><a title="main.TextBox.get_text" href="#main.TextBox.get_text">get_text</a></code></li>
+<li><code><a title="main.TextBox.handle_event" href="#main.TextBox.handle_event">handle_event</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.10.0</a>.</p>
+</footer>
+</body>
+</html>

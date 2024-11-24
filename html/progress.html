@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.10.0" />
+<title>Progress API documentation</title>
+<meta name="description" content="Documentation for the Progress module of the Number Ninjas game." />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>Progress</code></h1>
+</header>
+<section id="section-intro">
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">import pygame
+import sys
+from Student import Student
+
+# Initialize Pygame
+pygame.init()
+
+# Set up the display
+WIDTH, HEIGHT = 800, 600
+screen = pygame.display.set_mode((WIDTH, HEIGHT))
+pygame.display.set_caption("Progress")
+
+# Define colors
+WHITE = (255, 255, 255)
+GREEN = (0, 255, 0)
+GRAY = (200, 200, 200)
+BLACK = (0, 0, 0)
+
+# Font initialization
+FONT = pygame.font.Font(None, 32)
+FONT_LARGE = pygame.font.Font(None, 48)
+
+# Function to draw the level boxes, paths, and level numbers
+def draw_levels(student_score, total_levels=10):
+    """
+    Draws the level boxes and their connecting paths based on the student's progress.
+
+    Parameters:
+    - student_score (int): The current score of the student, determining how many levels have been cleared.
+    - total_levels (int, optional): The total number of levels available in the game.
+    """
+    offset_x, offset_y = 140, 70
+    box_size = 50
+    # Set starting positions and offset
+    start_x, start_y = WIDTH // 2 - 2 * (offset_x // 2), HEIGHT // 2 - (5 // 2) * offset_y
+
+
+    # Draw level boxes and paths
+    for level in range(total_levels):
+        x = start_x + (level % 2) * offset_x  # Alternate x position
+        y = start_y + (level // 2) * offset_y  # Move down after every two levels
+
+        color = GREEN if level < student_score else WHITE
+        box_rect = pygame.Rect(x - box_size // 2, y - box_size // 2, box_size, box_size)
+        pygame.draw.rect(screen, color, box_rect)
+
+        level_text = FONT.render(str(level + 1), True, BLACK)
+        level_text_rect = level_text.get_rect(center=box_rect.center)
+        screen.blit(level_text, level_text_rect)
+
+        if level < student_score:
+            draw_crossed_box(x, y, box_size)
+
+        if level < total_levels - 1:  # Draw paths between levels except the last one
+            next_x = start_x + ((level + 1) % 2) * offset_x
+            next_y = start_y + ((level + 1) // 2) * offset_y
+            pygame.draw.line(screen, GRAY, (x, y), (next_x, next_y), 5)
+
+# Function to draw a crossed box
+def draw_crossed_box(center_x, center_y, size):
+    """
+    Draws a crossed box at the specified location, indicating a cleared level.
+
+    Parameters:
+    - center_x (int): The X coordinate of the box's center.
+    - center_y (int): The Y coordinate of the box's center.
+    - size (int): The size of the box.
+    """
+    pygame.draw.line(screen, BLACK, (center_x - size // 2, center_y - size // 2),
+                     (center_x + size // 2, center_y + size // 2), 3)
+    pygame.draw.line(screen, BLACK, (center_x + size // 2, center_y - size // 2),
+                     (center_x - size // 2, center_y + size // 2), 3)
+
+# Function to draw the progress screen
+def draw_progress_screen(student):
+    """
+    Draws the entire progress screen, including the level boxes, current level, questions solved, and back button.
+
+    Parameters:
+    - student (Student): The student object, containing their current score and level.
+    """
+    screen.fill(WHITE)
+
+    # Draw the Ninja Map title
+    ninja_map_text = FONT_LARGE.render("Ninja Map", True, BLACK)
+    ninja_map_rect = ninja_map_text.get_rect(center=(WIDTH // 2, 50))
+    screen.blit(ninja_map_text, ninja_map_rect)
+
+    # Draw the levels
+    draw_levels(student.getScore())
+
+    # Display the current level and questions solved
+    current_level = student.getScore() + 1
+    questions_solved = student.getScore() * 5  # This assumes each level has 5 questions
+    current_level_text = FONT.render(f"Current Level: {current_level}", True, BLACK)
+    current_level_rect = current_level_text.get_rect(center=(WIDTH // 2, HEIGHT - 70))
+    screen.blit(current_level_text, current_level_rect)
+
+    questions_solved_text = FONT.render(f"Questions Solved: {questions_solved}", True, BLACK)
+    questions_solved_rect = questions_solved_text.get_rect(center=(WIDTH // 2, HEIGHT - 40))
+    screen.blit(questions_solved_text, questions_solved_rect)
+
+    # Draw the back button on the bottom right
+    back_button = FONT.render("Back", True, BLACK)
+    back_button_rect = back_button.get_rect(bottomright=(WIDTH - 10, HEIGHT - 10))
+    pygame.draw.rect(screen, GRAY, back_button_rect.inflate(20, 10))
+    screen.blit(back_button, back_button_rect)
+
+    pygame.display.update()
+
+    return back_button_rect  # Return the rect for event handling
+
+# Main loop for the progress screen
+def progress_main(student):
+    """
+    The main loop for the progress screen, handling events and updating the display.
+
+    Parameters:
+    - student (Student): The student object, used to draw the progress screen.
+    """
+    running = True
+    back_button_rect = draw_progress_screen(student)  # Draw the screen once and get the back button rect
+
+    while running:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                running = False
+                pygame.quit
+                sys.exit()
+            if event.type == pygame.MOUSEBUTTONDOWN:
+                if back_button_rect.collidepoint(event.pos):
+                    running = False  # Go back to the previous menu
+
+if __name__ == "__main__":
+    # You need to pass a student object here. For testing, we'll create a mock student class
+    class MockStudent:
+        def __init__(self, score):
+            self.score = score
+        def getScore(self):
+            return self.score
+    # Pass a student object with a score indicating the progress
+    student = MockStudent(score=3)  # Replace 3 with the actual score
+    progress_main(student)
+</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="Progress.draw_levels"><code class="name flex">
+<span>def <span class="ident">draw_levels</span></span>(<span>student_score, total_levels=10</span>)
+</code></dt>
+<dd>
+<div class="desc"><p>Draws the level boxes and their connecting paths based on the student's progress.</p>
+<p>Parameters:</p>
+<ul>
+<li><p>student_score (int): The current score of the student, determining how many levels have been cleared.</p></li>
+<li><p>total_levels (int, optional): The total number of levels available in the game.</p></li>
+</ul>
+</div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def draw_levels(student_score, total_levels=10):
+    """
+    Draws the level boxes and their connecting paths based on the student's progress.
+
+    Parameters:
+    - student_score (int): The current score of the student, determining how many levels have been cleared.
+    - total_levels (int, optional): The total number of levels available in the game.
+    """
+    offset_x, offset_y = 140, 70
+    box_size = 50
+    # Set starting positions and offset
+    start_x, start_y = WIDTH // 2 - 2 * (offset_x // 2), HEIGHT // 2 - (5 // 2) * offset_y
+
+
+    # Draw level boxes and paths
+    for level in range(total_levels):
+        x = start_x + (level % 2) * offset_x  # Alternate x position
+        y = start_y + (level // 2) * offset_y  # Move down after every two levels
+
+        color = GREEN if level < student_score else WHITE
+        box_rect = pygame.Rect(x - box_size // 2, y - box_size // 2, box_size, box_size)
+        pygame.draw.rect(screen, color, box_rect)
+
+        level_text = FONT.render(str(level + 1), True, BLACK)
+        level_text_rect = level_text.get_rect(center=box_rect.center)
+        screen.blit(level_text, level_text_rect)
+
+        if level < student_score:
+            draw_crossed_box(x, y, box_size)
+
+        if level < total_levels - 1:  # Draw paths between levels except the last one
+            next_x = start_x + ((level + 1) % 2) * offset_x
+            next_y = start_y + ((level + 1) // 2) * offset_y
+            pygame.draw.line(screen, GRAY, (x, y), (next_x, next_y), 5)</code></pre>
+</details>
+</dd>
+<dt id="Progress.draw_crossed_box"><code class="name flex">
+<span>def <span class="ident">draw_crossed_box</span></span>(<span>center_x, center_y, size</span>)
+</code></dt>
+<dd>
+<div class="desc"><p>Draws a crossed box at the specified location, indicating a cleared level.</p>
+<p>Parameters:</p>
+<ul>
+<li><p>center_x (int): The X coordinate of the box's center.</p></li>
+<li><p>center_y (int): The Y coordinate of the box's center.</p></li>
+<li><p>size (int): The size of the box.</p></li>
+</ul>
+</div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def draw_crossed_box(center_x, center_y, size):
+    """
+    Draws a crossed box at the specified location, indicating a cleared level.
+
+    Parameters:
+    - center_x (int): The X coordinate of the box's center.
+    - center_y (int): The Y coordinate of the box's center.
+    - size (int): The size of the box.
+    """
+    pygame.draw.line(screen, BLACK, (center_x - size // 2, center_y - size // 2),
+                     (center_x + size // 2, center_y + size // 2), 3)
+    pygame.draw.line(screen, BLACK, (center_x + size // 2, center_y - size // 2),
+                     (center_x - size // 2, center_y + size // 2), 3)</code></pre>
+</details>
+</dd>
+<dt id="Progress.draw_progress_screen"><code class="name flex">
+<span>def <span class="ident">draw_progress_screen</span></span>(<span>student</span>)
+</code></dt>
+<dd>
+<div class="desc"><p>Draws the entire progress screen, including the level boxes, current level, questions solved, and back button.</p>
+<p>Parameters:</p>
+<ul>
+<li><p>student (Student): The student object, containing their current score and level.</p></li>
+</ul>
+</div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def draw_progress_screen(student):
+    """
+    Draws the entire progress screen, including the level boxes, current level, questions solved, and back button.
+
+    Parameters:
+    - student (Student): The student object, containing their current score and level.
+    """
+    screen.fill(WHITE)
+
+    # Draw the Ninja Map title
+    ninja_map_text = FONT_LARGE.render("Ninja Map", True, BLACK)
+    ninja_map_rect = ninja_map_text.get_rect(center=(WIDTH // 2, 50))
+    screen.blit(ninja_map_text, ninja_map_rect)
+
+    # Draw the levels
+    draw_levels(student.getScore())
+
+    # Display the current level and questions solved
+    current_level = student.getScore() + 1
+    questions_solved = student.getScore() * 5  # This assumes each level has 5 questions
+    current_level_text = FONT.render(f"Current Level: {current_level}", True, BLACK)
+    current_level_rect = current_level_text.get_rect(center=(WIDTH // 2, HEIGHT - 70))
+    screen.blit(current_level_text, current_level_rect)
+
+    questions_solved_text = FONT.render(f"Questions Solved: {questions_solved}", True, BLACK)
+    questions_solved_rect = questions_solved_text.get_rect(center=(WIDTH // 2, HEIGHT - 40))
+    screen.blit(questions_solved_text, questions_solved_rect)
+
+    # Draw the back button on the bottom right
+    back_button = FONT.render("Back", True, BLACK)
+    back_button_rect = back_button.get_rect(bottomright=(WIDTH - 10, HEIGHT - 10))
+    pygame.draw.rect(screen, GRAY, back_button_rect.inflate(20, 10))
+    screen.blit(back_button, back_button_rect)
+
+    pygame.display.update()
+
+    return back_button_rect  # Return the rect for event handling</code></pre>
+</details>
+</dd>
+<dt id="Progress.progress_main"><code class="name flex">
+<span>def <span class="ident">progress_main</span></span>(<span>student</span>)
+</code></dt>
+<dd>
+<div class="desc"><p>The main loop for the progress screen, handling events and updating the display.</p>
+<p>Parameters:</p>
+<ul>
+<li><p>student (Student): The student object, used to draw the progress screen.</p></li>
+</ul>
+</div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def progress_main(student):
+    """
+    The main loop for the progress screen, handling events and updating the display.
+
+    Parameters:
+    - student (Student): The student object, used to draw the progress screen.
+    """
+    running = True
+    back_button_rect = draw_progress_screen(student)  # Draw the screen once and get the back button rect
+
+    while running:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                running = False
+                pygame.quit()
+                sys.exit()
+            if event.type == pygame.MOUSEBUTTONDOWN:
+                if back_button_rect.collidepoint(event.pos):
+                    running = False  # Go back to the previous menu</code></pre>
+</details>
+</dd>
+</dl>
+</section>
+<section>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="">
+<li><code><a title="Progress.draw_levels" href="#Progress.draw_levels">draw_levels</a></code></li>
+<li><code><a title="Progress.draw_crossed_box" href="#Progress.draw_crossed_box">draw_crossed_box</a></code></li>
+<li><code><a title="Progress.draw_progress_screen" href="#Progress.draw_progress_screen">draw_progress_screen</a></code></li>
+<li><code><a title="Progress.progress_main" href="#Progress.progress_main">progress_main</a></code></li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.10.0</a>.</p>
+</footer>
+</body>
+</html>
